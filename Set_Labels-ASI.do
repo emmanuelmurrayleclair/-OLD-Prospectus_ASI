@@ -207,5 +207,5 @@ lab values i1 i1
 lab def j1 11 "other products" 12 "Total" 99 "Misc"
 lab values j1 j1
 
-save "C:\Users\Emmanuel\Dropbox\Prospectus_Emmanuel\ASI\Data_Raw\ASI_Raw.dta", replace
+*save "C:\Users\Emmanuel\Dropbox\Prospectus_Emmanuel\ASI\Data_Raw\ASI_Raw.dta", replace
 
