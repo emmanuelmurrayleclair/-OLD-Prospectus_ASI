@@ -1,0 +1,31 @@
+First slide: 
+ -global climate change is a problem. There is an externality. Then, say "in practice, it is not feasible to measure carbon emissions bcause that would require puting emissions device on every car etc."
+ -in practice we tax fuels, not emissions
+ -then, make a bridge to say that the details of how we implement these taxes matter in the real world
+ -what proportion of total emissions are by firms vs. consumers?
+
+Second slide (fourth slide in current):
+ - What I do, THEN tell what others are doinh
+ - too wordy, use bullet points: novel empirical evidence, india plants, etc.
+ - say optimal tax is not proportional to carobn emissions but is dependent on the substitutability of these fuels because it is costly to switch between fuels
+ 
+Next slide:
+ - key mechanism (actual findings of the data) and what the model says
+ - 
+
+Last slide of introduction:
+ - Contribution, about the literature
+
+data:
+- repeated cross section and do my best to match plants over time
+- single statistics and reference for these industries
+- can actually use different fuels
+- more empirical evidence on switching 
+- say why i decompose change in ghg emissions
+  - simpler decomposition? 
+  - find a way to say this more precisely
+
+Model:
+ - model overview slide
+
+

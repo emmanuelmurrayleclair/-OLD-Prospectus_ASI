@@ -1,0 +1,22 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Relationship between productivity and switching off coal}
+\begin{tabular}{l*{8}{cc}}
+\toprule
+                    &\multicolumn{2}{c}{(1)}           &\multicolumn{2}{c}{(2)}           &\multicolumn{2}{c}{(3)}           &\multicolumn{2}{c}{(4)}           &\multicolumn{2}{c}{(5)}           &\multicolumn{2}{c}{(6)}           &\multicolumn{2}{c}{(7)}           &\multicolumn{2}{c}{(8)}           \\
+                    &\multicolumn{2}{c}{OLS}           &\multicolumn{2}{c}{}              &\multicolumn{2}{c}{FE}            &\multicolumn{2}{c}{}              &\multicolumn{2}{c}{ACF (Energy Free)}&\multicolumn{2}{c}{}              &\multicolumn{2}{c}{ACF (Energy Fixed)}&\multicolumn{2}{c}{}              \\
+\midrule
+Switching off coal in current year=0&           0         &         (.)&                     &            &           0         &         (.)&                     &            &           0         &         (.)&                     &            &           0         &         (.)&                     &            \\
+Switching off coal in current year=1&     -0.0503\sym{+}  &     (0.056)&                     &            &     -0.0506\sym{+}  &     (0.054)&                     &            &     -0.0503\sym{+}  &     (0.064)&                     &            &     -0.0496\sym{+}  &     (0.068)&                     &            \\
+Switching off coal in current year=0&                     &            &           0         &         (.)&                     &            &           0         &         (.)&                     &            &           0         &         (.)&                     &            &           0         &         (.)\\
+Switching off coal in current year=1&                     &            &     -0.0515\sym{***}&     (0.000)&                     &            &     -0.0548\sym{***}&     (0.000)&                     &            &     -0.0432\sym{***}&     (0.000)&                     &            &     -0.0475\sym{***}&     (0.000)\\
+industry dummies    &         Yes         &            &         Yes         &            &         Yes         &            &         Yes         &            &         Yes         &            &         Yes         &            &         Yes         &            &         Yes         &            \\
+district dummies    &         Yes         &            &         Yes         &            &         Yes         &            &         Yes         &            &         Yes         &            &         Yes         &            &         Yes         &            &         Yes         &            \\
+\midrule
+Observations        &       46581         &            &       46581         &            &       46581         &            &       46581         &            &       46581         &            &       46581         &            &       46581         &            &       46581         &            \\
+\bottomrule
+\multicolumn{17}{l}{\footnotesize \textit{p}-values in parentheses}\\
+\multicolumn{17}{l}{\footnotesize In last two columns, productivity estimate comes from PFE using ACF method by treating Energy as fixed input within year}\\
+\multicolumn{17}{l}{\footnotesize \sym{+} \(p<0.1\), \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+\end{table}

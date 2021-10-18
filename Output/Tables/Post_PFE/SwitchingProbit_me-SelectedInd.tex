@@ -1,0 +1,20 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Marginal effects, probability of adding fuel (current year)}
+\begin{tabular}{l*{5}{c}}
+\hline\hline
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}\\
+            &\multicolumn{1}{c}{All fuels}&\multicolumn{1}{c}{Natural Gas}&\multicolumn{1}{c}{Coal}&\multicolumn{1}{c}{Oil}&\multicolumn{1}{c}{Electricity}\\
+\hline
+L.logTFP    &     0.00379         &     0.00346         &      0.0150\sym{**} &     -0.0101\sym{***}&     0.00951\sym{***}\\
+            &   (0.00679)         &   (0.00430)         &   (0.00470)         &   (0.00252)         &   (0.00209)         \\
+[1em]
+ae          &      -0.872\sym{***}&                     &                     &                     &                     \\
+            &     (0.128)         &                     &                     &                     &                     \\
+\hline
+\(N\)       &        7787         &        7787         &        7787         &        7787         &        7787         \\
+\hline\hline
+\multicolumn{6}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{6}{l}{\footnotesize \sym{+} \(p<0.1\), \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+\end{table}

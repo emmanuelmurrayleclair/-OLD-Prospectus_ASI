@@ -1,0 +1,78 @@
+\documentclass[12pt,notitlepage]{article}
+%\usepackage[margin=1in]{geometry}
+%	\geometry{
+%	top=20mm,
+%	bottom=20mm,
+%	}
+\usepackage[margin=1in]{geometry}              
+\usepackage{placeins}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{mathtools}
+\usepackage{mathrsfs}
+\usepackage{amsmath, amsthm, amssymb, centernot}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{comment}
+\newcommand{\sym}[1] {\ifmmode^{#1} \else\(^{#1}\) \fi}
+
+\DeclareMathOperator{\plim}{plim}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=blue,
+    urlcolor=blue
+}
+\setlength\parindent{0pt}
+
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+\pagestyle{plain}
+\title{Orbis Data for 4 Countries}
+\author{}
+\date{}
+
+
+\begin{document}
+\maketitle
+
+\subsection*{Enterprise Survey (India): Standard effects of collateral constraint}
+
+
+%\begin{figure}[!htpb]
+%\centering
+%\caption{First stage effect of Court history on collateral requirement of loans}
+%\includegraphics{../Output/Graphs/CourtHist_Colreq.pdf}
+%\end{figure}
+
+
+\input{../Output/Tables/Colcons_LaborShare_EnterpriseSurvey.tex}
+\pagebreak
+
+\subsection*{Enterprise Survey (India): Non-standard effects of collateral constraint}
+
+\input{../Output/Tables/Colcons_Educ_EnterpriseSurvey.tex}
+\input{../Output/Tables/Colcons_Training_EnterpriseSurvey.tex}
+\input{../Output/Tables/Colcons_sTraining_EnterpriseSurvey.tex}
+
+\pagebreak
+
+%\input{../Output/Tables/CourtHist_Colreq.tex}
+%\input{../Output/Tables/ColReq_LaborProd.tex}
+%\input{../Output/Tables/ColReq_LaborShare.tex}
+%\input{../Output/Tables/ColReq_Wages.tex}
+
+\subsection*{ASI: Standard effects of collateral constraint}
+
+\input{../Output/Tables/Colcons_LaborShare_ASI.tex}
+\pagebreak
+
+\subsection*{ASI: non-standard effects of collateral constraint}
+
+\input{../Output/Tables/Colcons_sLaborProp_ASI.tex}
+\input{../Output/Tables/Colcons_SalesPerWorker_ASI.tex}
+
+\end{document}

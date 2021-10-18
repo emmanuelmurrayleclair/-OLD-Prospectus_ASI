@@ -1,0 +1,28 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Conditional Probability of Switching to Gas}
+\begin{tabular}{l*{2}{cc}}
+\toprule
+                    &\multicolumn{2}{c}{(1)}           &\multicolumn{2}{c}{(2)}           \\
+                    &\multicolumn{2}{c}{Plant Switching Current Year}&\multicolumn{2}{c}{Plant Switching Any Year}\\
+                    &Switching to gas in current year         &            &Switching to gas in any year         &            \\
+\midrule
+No Connection       &           0         &         (.)&           0         &         (.)\\
+Direct Access, Zone 1&       0.181         &     (0.318)&       0.370\sym{***}&     (0.000)\\
+Direct Access, Zone 2&           0         &         (.)&           0         &         (.)\\
+Direct Access, Zone 3&       0.518         &     (0.239)&       0.815\sym{***}&     (0.001)\\
+Direct Access, Zone 4&      0.0595         &     (0.841)&       0.153         &     (0.290)\\
+Indirect Access, Zone 1&       0.195         &     (0.530)&       0.757\sym{***}&     (0.000)\\
+Indirect Access, Zone 2&     -0.0907         &     (0.815)&      -0.144         &     (0.480)\\
+Indirect Access, Zone 3&           0         &         (.)&           0         &         (.)\\
+Indirect Access, Zone 4&           0         &         (.)&           0         &         (.)\\
+Delta\_nProduct      &     -0.0358         &     (0.472)&                     &            \\
+nProduct            &                     &            &     0.00377         &     (0.843)\\
+industry dummies    &         Yes         &            &         Yes         &            \\
+\midrule
+Observations        &        2502         &            &        2861         &            \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize \textit{p}-values in parentheses}\\
+\multicolumn{5}{l}{\footnotesize \sym{+} \(p<0.1\), \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+\end{table}

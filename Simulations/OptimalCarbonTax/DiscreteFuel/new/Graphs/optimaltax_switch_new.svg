@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="windows-1252"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="220 205.442 560 403.846" xmlns:latexdraw="http://latexdraw.sourceforge.net/namespaces/latexdraw" version="1.1" baseProfile="full">
+    <g>
+        <g latexdraw:type="joinedLines" id="id1824005378">
+            <polyline points="335.38461538461536,420.0 755.3846153846156,420.0 " stroke="black" stroke-width="2.0" fill="black" latexdraw:rotationAngle="0.0" marker-end="url(#arrow1-1824005378)"/>
+        </g>
+        <g latexdraw:type="text" id="id357022395" fill="black" latexdraw:position="bl">
+            <text x="760.0" y="440.0">$\frac{p_d}{p_c}$</text>
+        </g>
+        <g latexdraw:type="akinPoints" id="id287194032" latexdraw:pathType="CURVES" latexdraw:interval="5" latexdraw:points="240.0 400.0 ">
+            <path d="M 240.0 400.0" stroke="black" stroke-width="1.0" fill="none"/>
+        </g>
+        <g latexdraw:type="text" id="id871610861" fill="black" latexdraw:position="bl">
+            <text x="432.3076923076926" y="446.9230769230771">$\frac{\gamma_d}{\gamma_c}$</text>
+        </g>
+        <g latexdraw:type="akinPoints" id="id658967147" latexdraw:pathType="CURVES" latexdraw:interval="5" latexdraw:points="340.0 320.0 ">
+            <path d="M 340.0 320.0" stroke="#0033ff" stroke-width="1.0" fill="none" stroke-dasharray="8.819444444444445, 5.291666666666667"/>
+        </g>
+        <g latexdraw:type="akinPoints" id="id163285438" latexdraw:pathType="CURVES" latexdraw:interval="5" latexdraw:points="340.0 300.0 ">
+            <path d="M 340.0 300.0" stroke="#0033ff" stroke-width="1.0" fill="none" stroke-dasharray="8.819444444444445, 5.291666666666667"/>
+        </g>
+        <g latexdraw:type="akinPoints" id="id1399683246" latexdraw:pathType="CURVES" latexdraw:interval="5" latexdraw:points="340.0 340.0 380.0 360.0 420.0 380.0 660.0 400.0 ">
+            <path d="M 340.0 340.0" stroke="#0033ff" stroke-width="1.0" fill="none" stroke-dasharray="8.819444444444445, 5.291666666666667"/>
+        </g>
+        <g latexdraw:type="akinPoints" id="id1190900148" latexdraw:pathType="CURVES" latexdraw:interval="5" latexdraw:points="340.0 340.0 380.0 360.0 500.0 380.0 600.0 400.0 ">
+            <path d="M 340.0 340.0" stroke="#0033ff" stroke-width="1.0" fill="none" stroke-dasharray="8.819444444444445, 5.291666666666667"/>
+        </g>
+        <g latexdraw:type="akinPoints" id="id468632131" latexdraw:pathType="CURVES" latexdraw:interval="5" latexdraw:points="700.0 400.0 680.0 380.0 620.0 360.0 540.0 340.0 ">
+            <path d="M 700.0 400.0" stroke="#0033ff" stroke-width="1.0" fill="none" stroke-dasharray="8.819444444444445, 5.291666666666667"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1623200167">
+            <polyline points="334.73076923076883,589.288461538461 333.9615384615381,225.44230769230717 " stroke="black" stroke-width="1.5" fill="none" latexdraw:rotationAngle="0.0" marker-start="url(#arrow0-1623200167)" marker-end="url(#arrow1-1623200167)"/>
+        </g>
+        <g latexdraw:type="bezierCurve" id="id904404367">
+            <path d="M 333.9615384615381 307.74999999999955 C 333.9615384615381 347.74999999999955 531.6538461538462 506.2115384615381 677.0384615384614 498.51923076923026" stroke="black" stroke-width="1.5" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="text" id="id1998838328" fill="black" latexdraw:position="bl">
+            <text x="320.11538461538436" y="423.8525641025635">0</text>
+        </g>
+        <g latexdraw:type="text" id="id1950449210" fill="black" latexdraw:position="bl">
+            <text x="463.19230769230745" y="526.211538461538">$\frac{\partial ghg/\partial p_d}{\partial ghg/\partial p_c} - \frac{\partial P/\partial p_d}{\partial P/\partial p_c}\Big|_{ns}$</text>
+        </g>
+        <g latexdraw:type="bezierCurve" id="id768973315">
+            <path d="M 334.73076923076894 253.1346153846148 C 334.73076923076894 293.1346153846148 554.730769230769 473.134615384615 729.3461538461539 457.74999999999955" stroke="blue" stroke-width="1.5" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="text" id="id1896798741" fill="blue" latexdraw:position="bl">
+            <text x="517.1410256410256" y="447.185897435897">$&gt; \frac{\gamma_d}{\gamma_c}$</text>
+        </g>
+        <g latexdraw:type="text" id="id248014460" fill="blue" latexdraw:position="bl">
+            <text x="363.1923076923071" y="296.9807692307683">$\frac{\partial ghg/\partial p_d}{\partial ghg/\partial p_c} - \frac{\partial P/\partial p_d}{\partial P/\partial p_c}\Big|_{s}$</text>
+        </g>
+        <g latexdraw:type="text" id="id1412381690" fill="black" latexdraw:position="bl">
+            <text x="337.4999999999988" y="438.08333333333275">1</text>
+        </g>
+    </g>
+    <defs>
+        <marker overflow="visible" markerUnits="userSpaceOnUse" orient="auto" id="arrow1-1824005378">
+            <path d="M 0.0 0.0 L -4.652083333333334 -3.322916666666667 L -4.652083333333334 0.0 L -4.652083333333334 3.322916666666667 z" fill="black" stroke="black" latexdraw:arrSizeNum="2" latexdraw:tbarSizeNum="5"/>
+        </marker>
+        <marker overflow="visible" markerUnits="userSpaceOnUse" orient="89.879" id="arrow0-1623200167">
+            <path d="M 0.0 0.0 L -7.904166666666667 -2.822916666666667 L -7.904166666666667 0.0 L -7.904166666666667 2.822916666666667 z" fill="black" stroke="black" latexdraw:arrSizeNum="2" latexdraw:tbarSizeNum="5"/>
+        </marker>
+        <marker overflow="visible" markerUnits="userSpaceOnUse" orient="269.879" id="arrow1-1623200167">
+            <path d="M 0.0 0.0 L -7.904166666666667 -2.822916666666667 L -7.904166666666667 0.0 L -7.904166666666667 2.822916666666667 z" fill="black" stroke="black" latexdraw:arrSizeNum="2" latexdraw:tbarSizeNum="5"/>
+        </marker>
+    </defs>
+    <metadata>
+        <latexdraw:metadata>
+            <latexdraw:centreHoriz>false</latexdraw:centreHoriz>
+            <latexdraw:positionVert/>
+            <latexdraw:zoom>1.5000000000000004</latexdraw:zoom>
+            <latexdraw:vpx>0.473</latexdraw:vpx>
+            <latexdraw:vpy>0.413</latexdraw:vpy>
+        </latexdraw:metadata>
+    </metadata>
+</svg>

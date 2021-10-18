@@ -1,0 +1,18 @@
+old aggregation results:
+
+- houthaker?
+
+Is switching related to age of firms?
+Do firms tend switch to the same fuel
+Is switching related to output/size/etc?
+Is electricity really that important relative to fuels?
+
+Is there more mixing with multi-product firms?
+
+Pr(switch to natgas from coal|x)
+Pr(switch to coal from natgas|x)
+
+How to explain different prices aceross firms?
+compute an average price within coal, then divide total expenditure by the price index.
+
+Are switching related to price variation within and across firms? 

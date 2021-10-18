@@ -1,0 +1,285 @@
+\documentclass[12pt,notitlepage]{article}
+%\usepackage[margin=1in]{geometry}
+%	\geometry{
+%	top=20mm,
+%	bottom=20mm,
+%	}
+\usepackage[margin=1in]{geometry}              
+\usepackage{placeins}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{mathtools}
+\usepackage{mathrsfs}
+\usepackage{amsmath, amsthm, amssymb, centernot}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{comment}
+\newcommand{\sym}[1] {\ifmmode^{#1} \else\(^{#1}\) \fi}
+
+\DeclareMathOperator{\plim}{plim}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=blue,
+    urlcolor=blue
+}
+\setlength\parindent{0pt}
+
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+\pagestyle{plain}
+\title{GHG Emissions (ASI)}
+\author{}
+\date{}
+
+
+\begin{document}
+\maketitle
+
+\section{Fuel and Energy Prices}
+
+\begin{figure}[!htpb]
+\centering
+\caption{IPO and Profitability}
+\begin{subfigure}{.49\textwidth}
+    \centering
+    \subcaption{Fuel Prices}
+ \includegraphics[scale=0.9]{../Output/Graphs/FuelPrices_Year.pdf}
+\end{subfigure}%
+\begin{subfigure}{.49\textwidth}
+    \centering
+    \subcaption{Energy Prices}
+ \includegraphics[scale=0.9]{../Output/Graphs/EnergyPrices_Year.pdf}
+\end{subfigure}
+\end{figure}
+\pagebreak
+
+\section{Aggregate Shares}
+
+\begin{figure}[!htpb]
+\centering
+\caption{Spending Shares}
+\begin{subfigure}{.49\textwidth}
+    \centering
+    \subcaption{Fuels}
+ \includegraphics[scale=0.8]{../Output/Graphs/FuelSpendingShare_year.pdf}
+\end{subfigure}%
+\begin{subfigure}{.49\textwidth}
+    \centering
+    \subcaption{Energy}
+ \includegraphics[scale=0.8]{../Output/Graphs/EnergySpendingShare_year.pdf}
+\end{subfigure}
+\end{figure}
+
+\begin{figure}[!htpb]
+\centering
+\caption{Quantity Shares (mmbtu)}
+\begin{subfigure}{.49\textwidth}
+    \centering
+    \subcaption{Fuels}
+ \includegraphics[scale=0.8]{../Output/Graphs/FuelQuantityShare_year.pdf}
+\end{subfigure}%
+\begin{subfigure}{.49\textwidth}
+    \centering
+    \subcaption{Energy}
+ \includegraphics[scale=0.8]{../Output/Graphs/EnergyQuantityShare_year.pdf}
+\end{subfigure}
+\end{figure}
+\pagebreak
+
+\section{GHG emissions}
+
+\begin{figure}[!htpb]
+\centering
+\begin{subfigure}{.49\textwidth}
+	\centering
+	\includegraphics{../Output/Graphs/EmissionIntensity_bySource.pdf}
+	\subcaption{One mmbtu in kg CO2e by energy source}
+\end{subfigure}
+\begin{subfigure}{.49\textwidth}
+	\centering
+	\includegraphics{../Output/Graphs/AggGHG_year_UnbalancedPanel.pdf}
+	\subcaption{Aggregate GHG emissions}
+\end{subfigure}
+\end{figure}
+
+
+\section{Evidence on mixing}
+
+\begin{figure}[!htpb]
+\centering
+\caption{Quantity Shares (mmbtu)}
+\begin{subfigure}{.49\textwidth}
+    \centering
+    \subcaption{Single fuel consumption above given threshold}
+ \includegraphics[scale=0.8]{../Output/Graphs/FuelThreshold_FirmProp.pdf}
+\end{subfigure}%
+\begin{subfigure}{.49\textwidth}
+    \centering
+    \subcaption{Mixing and Single fuel consumption}
+ \includegraphics[scale=0.8]{../Output/Graphs/Fueltype_Firmprop.pdf}
+\end{subfigure}
+\end{figure}
+
+\begin{table}[!htpb]
+	\centering
+	\caption{Effect of producing multiple outputs on fuel mixing}
+	\input{../Output/Tables/Mixing/MultProd.tex}
+\end{table}
+
+\begin{figure}[!htpb]
+\centering
+\includegraphics{../Output/Graphs/nTimesSwitch-Dist.pdf}
+\caption{Distribution of switching within plants (Balanced panel)}
+\end{figure}
+
+
+\pagebreak
+
+%\intput{../Output/Tables/Mixing/MultProd.tex}
+
+
+
+\section{Evidence on Fuel Switching (Balanced panel)}
+
+\begin{table}[!htpb]
+	\centering
+	\caption{Proportion of unique firms who switch between fuels}
+	\begin{tabular}{l*{3}{c}}
+		\toprule
+		\input{../Output/Tables/Switching/nSwitchers.tex}
+	\end{tabular}
+\end{table}
+
+\begin{table}[!htpb]
+	\centering
+	\caption{Proportion of unique firms in each switching categories (not mutually exclusive)}
+	\begin{tabular}{@{}ccccccc@{}}
+		\toprule
+		\input{../Output/Tables/Switching/nSwitchers_category.tex}
+	\end{tabular}
+\end{table}
+
+\centering
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{3}{c}}
+\hline\hline
+Single to Mix (Row)/Mix to Single (Column)&          No&         Yes&       Total\\
+\hline
+No          &        2297&         159&        2456\\
+Yes         &         228&         941&        1169\\
+Total       &        2525&        1100&        3625\\
+\hline\hline
+\end{tabular}
+}
+
+\pagebreak
+
+%\begin{table}[!htpb]
+%	\centering
+%	\caption{Most firms who switch from single to mixing also switch from mixing to single}
+%	\intput{../Output/Tables/Switching/nSwitchers_category_excl.tex}
+%\end{table}
+
+\subsection{One way switching}
+
+\begin{figure}[!htpb]
+\centering
+\includegraphics[scale=0.8	]{../Output/Graphs/Switch_year.pdf}
+\caption{Proportion of switching across fuels}
+\end{figure}
+
+
+\subsection{Twoway switching and switching consistency}
+
+\begin{figure}[!htpb]
+\centering
+\caption{Quantity Shares (mmbtu)}
+\begin{subfigure}{.49\textwidth}
+    \centering
+    \subcaption{Coal and Natural Gas}
+ \includegraphics[scale=0.8]{../Output/Graphs/SwitchCoalNatgas_year.pdf}
+\end{subfigure}%
+\begin{subfigure}{.49\textwidth}
+    \centering
+    \subcaption{Oil and Natural Gas}
+ \includegraphics[scale=0.8]{../Output/Graphs/SwitchOilNatgas_year.pdf}
+\end{subfigure}
+\begin{subfigure}{.49\textwidth}
+    \centering
+    \subcaption{Coal and Oil}
+ \includegraphics[scale=0.8]{../Output/Graphs/SwitchCoalOil_year.pdf}
+\end{subfigure}
+\end{figure}
+
+
+\subsection{Decomposition of GHG emissions}
+
+\begin{figure}[!htpb]
+\centering
+\caption{Fuel switching and change in aggregate GHG emissions}
+\begin{subfigure}{.49\textwidth}
+    \centering
+    \subcaption{Decomposition between within and across}
+ \includegraphics[scale=0.9]{../Output/Graphs/AggGHGChange_year_BalancedPanel.pdf}
+\end{subfigure}%
+\begin{subfigure}{.49\textwidth}
+    \centering
+    \subcaption{Fraction due to within and across fuels}
+ \includegraphics[scale=0.9]{../Output/Graphs/AggGHGChange_Decomposition_BalancedPanel.pdf}
+\end{subfigure}
+\end{figure}
+\pagebreak
+
+\subsection{Relationship between fuel switching and Observables}
+
+\subsubsection{Gross output and switching next period}
+\centering
+\input{../Output/Tables/Switching/Switching_RevProd.tex}
+
+\begin{figure}[!htpb]
+\centering
+\caption{Average revenue productivity and switching in the next period}
+ \includegraphics{../Output/Graphs/RevProdSwitchingNextPeriod_year.pdf}
+\end{figure}
+\pagebreak
+
+\subsubsection{Gross output and switcihing at least once}
+\centering
+\input{../Output/Tables/Switching/Switchers_RevProd.tex}
+
+\begin{figure}[!htpb]
+\centering
+\caption{Average revenue productivity of switchers vs non-switchers}
+ \includegraphics{../Output/Graphs/RevProdSwitching_year.pdf}
+\end{figure}
+\pagebreak
+
+\centering
+\input{../Output/Tables/Switching/SwitchingProbit_me_lag.tex}
+
+\centering
+\input{../Output/Tables/Switching/SwitchingProbit_me.tex}
+
+
+
+
+
+%\begin{table}[!htpb]
+%    \centering
+%    \caption{Descriptive Statistics - Czech Republic}
+%    \scalebox{0.6}{
+%    \begin{tabular}{@{}ccccccc@{}}
+%        \toprule
+%        \input{../Output/CZ/Table_Descriptive-Stats}
+%    \end{tabular}
+%    }
+%    \label{tab:my_label}
+%\end{table}
+
+
+\end{document}

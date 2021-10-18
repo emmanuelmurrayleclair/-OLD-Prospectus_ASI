@@ -1,0 +1,16 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{3}{c}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+                    &\multicolumn{1}{c}{No controls}&\multicolumn{1}{c}{Industry dummies}&\multicolumn{1}{c}{Control for size and Gross output per worker}\\
+\midrule
+Multiple Outputs    &       0.108\sym{***}&       0.104\sym{***}&      0.0966\sym{***}\\
+                    &     (19.14)         &     (18.10)         &     (16.59)         \\
+\midrule
+Observations        &       20669         &       20669         &       20669         \\
+\bottomrule
+\multicolumn{4}{l}{\footnotesize \textit{t} statistics in parentheses}\\
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+}

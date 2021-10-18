@@ -1,0 +1,22 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Relationship between productivity and fuel switching}
+\begin{tabular}{l*{4}{cc}}
+\toprule
+                    &\multicolumn{2}{c}{(1)}           &\multicolumn{2}{c}{(2)}           &\multicolumn{2}{c}{(3)}           &\multicolumn{2}{c}{(4)}           \\
+                    &\multicolumn{2}{c}{Switching Current Year}&\multicolumn{2}{c}{ }             &\multicolumn{2}{c}{Switching Next Year}&\multicolumn{2}{c}{ }             \\
+\midrule
+Not Switching       &           0         &         (.)&           0         &         (.)&                     &            &                     &            \\
+Switching           &      0.0737\sym{***}&     (0.000)&      0.0475\sym{*}  &     (0.019)&                     &            &                     &            \\
+Not Switching       &                     &            &                     &            &           0         &         (.)&           0         &         (.)\\
+Switching           &                     &            &                     &            &      0.0963\sym{***}&     (0.000)&      0.0687\sym{***}&     (0.001)\\
+Constant            &       2.221\sym{***}&     (0.000)&       1.890\sym{***}&     (0.000)&       2.236\sym{***}&     (0.000)&       1.904\sym{***}&     (0.000)\\
+industry dummies    &          No         &            &         Yes         &            &          No         &            &         Yes         &            \\
+\midrule
+Observations        &        6810         &            &        6810         &            &        5688         &            &        5688         &            \\
+\bottomrule
+\multicolumn{9}{l}{\footnotesize \textit{p}-values in parentheses}\\
+\multicolumn{9}{l}{\footnotesize Productivity estimate comes from PFE using ACF method}\\
+\multicolumn{9}{l}{\footnotesize \sym{+} \(p<0.1\), \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+\end{table}

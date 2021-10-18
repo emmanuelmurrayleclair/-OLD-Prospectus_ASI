@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="windows-1252"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="105 122 880 200" xmlns:latexdraw="http://latexdraw.sourceforge.net/namespaces/latexdraw" version="1.1" baseProfile="full">
+    <g>
+        <g latexdraw:type="joinedLines" id="id1528472447">
+            <polyline points="140.0,160.0 938.0,156.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0" marker-end="url(#arrow1-1528472447)"/>
+        </g>
+        <g latexdraw:type="text" id="id998178249" fill="black" latexdraw:position="bl">
+            <text x="142.0" y="142.0">t</text>
+        </g>
+        <g latexdraw:type="text" id="id1862018027" fill="black" latexdraw:position="bl">
+            <text x="910.0" y="145.0">t+1</text>
+        </g>
+        <g latexdraw:type="text" id="id1268555768" fill="black" latexdraw:position="bl">
+            <text x="148.0" y="188.0">Observe</text>
+        </g>
+        <g latexdraw:type="text" id="id1002550675" fill="black" latexdraw:position="bl">
+            <text x="165.0" y="227.0">$\Psi_t$</text>
+        </g>
+        <g latexdraw:type="text" id="id1075745045" fill="black" latexdraw:position="bl">
+            <text x="165.0" y="207.0">$\mathcal{F}_t$</text>
+        </g>
+        <g latexdraw:type="text" id="id759314593" fill="black" latexdraw:position="bl">
+            <text x="143.0" y="247.0">$\{ p_{ft} \}_{f \in \mathcal{F}_t}$</text>
+        </g>
+        <g latexdraw:type="text" id="id249337767" fill="black" latexdraw:position="bl">
+            <text x="257.0" y="188.0">Solve allocation of</text>
+        </g>
+        <g latexdraw:type="text" id="id188400002" fill="black" latexdraw:position="bl">
+            <text x="259.0" y="240.0">Get $p_e(\Psi,\mathcal{F}_t)$</text>
+        </g>
+        <g latexdraw:type="text" id="id38209125" fill="black" latexdraw:position="bl">
+            <text x="260.0" y="212.0">fuels to energy tasks</text>
+        </g>
+        <g latexdraw:type="text" id="id1516805387" fill="black" latexdraw:position="bl">
+            <text x="423.0" y="193.0">Observe Input prices</text>
+        </g>
+        <g latexdraw:type="text" id="id744332664" fill="black" latexdraw:position="bl">
+            <text x="458.0" y="208.0">$p_{mt},r_t,w_t$</text>
+        </g>
+        <g latexdraw:type="text" id="id1756513510" fill="black" latexdraw:position="bl">
+            <text x="608.0" y="192.0">Choose Static inputs</text>
+        </g>
+        <g latexdraw:type="text" id="id1752851084" fill="black" latexdraw:position="bl">
+            <text x="657.0" y="211.0">$M_t,E_t$</text>
+        </g>
+        <g latexdraw:type="text" id="id81339945" fill="black" latexdraw:position="bl">
+            <text x="785.0" y="190.0">Choose Dynamic inputs</text>
+        </g>
+        <g latexdraw:type="text" id="id341366872" fill="black" latexdraw:position="bl">
+            <text x="828.0" y="215.0">$\mathcal{F}_{t+1},L_{t+1},K_{t+1}$</text>
+        </g>
+        <g latexdraw:type="joinedLines" id="id674614521">
+            <polyline points="176.0,150.0 176.0,168.0 " stroke="black" stroke-width="1.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1314365371">
+            <polyline points="324.0,148.0 324.0,166.0 " stroke="black" stroke-width="1.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id107628708">
+            <polyline points="516.0,146.0 516.0,164.0 " stroke="black" stroke-width="1.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1992117896">
+            <polyline points="699.0,144.0 699.0,164.0 699.0,164.0 " stroke="black" stroke-width="1.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1112649451">
+            <polyline points="853.0,144.0 853.0,164.0 " stroke="black" stroke-width="1.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="text" id="id1025777952" fill="black" latexdraw:position="bl">
+            <text x="490.0" y="229.0">$z_t$</text>
+        </g>
+        <g latexdraw:type="bezierCurve" id="id968853973">
+            <path d="M 424.0 241.0 C 424.0 281.0 125.0 280.0 125.0 240.0" stroke="#800000" stroke-width="1.0" fill="none" stroke-dasharray="8.819444444444445, 5.291666666666667" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="bezierCurve" id="id477821396">
+            <path d="M 965.0 235.0 C 965.0 275.0 443.0 273.0 443.0 233.0" stroke="#000080" stroke-width="1.0" fill="none" stroke-dasharray="8.819444444444445, 5.291666666666667" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="text" id="id256957883" fill="#800000" latexdraw:position="bl">
+            <text x="178.0" y="302.0">Energy Tasks (Inner Nest)</text>
+        </g>
+        <g latexdraw:type="text" id="id1339130142" fill="#000080" latexdraw:position="bl">
+            <text x="691.0" y="291.0">Outer Nest</text>
+        </g>
+    </g>
+    <defs>
+        <marker overflow="visible" markerUnits="userSpaceOnUse" orient="359.713" id="arrow1-1528472447">
+            <path d="M 0.0 0.0 L -9.304166666666667 -3.322916666666667 L -9.304166666666667 0.0 L -9.304166666666667 3.322916666666667 z" fill="black" stroke="black" latexdraw:arrSizeNum="2" latexdraw:tbarSizeNum="5"/>
+        </marker>
+    </defs>
+    <metadata>
+        <latexdraw:metadata>
+            <latexdraw:centreHoriz>false</latexdraw:centreHoriz>
+            <latexdraw:positionVert/>
+            <latexdraw:zoom>1.0</latexdraw:zoom>
+            <latexdraw:vpx>0.5</latexdraw:vpx>
+            <latexdraw:vpy>0.385</latexdraw:vpy>
+        </latexdraw:metadata>
+    </metadata>
+</svg>

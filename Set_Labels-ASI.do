@@ -1,13 +1,25 @@
-*---------------
-*Order variables
-*---------------
+*--------------------
+*Clean variable names
+*--------------------
 
-use "C:\Users\Emmanuel\Dropbox\Prospectus_Emmanuel\ASI\Data_Raw\ASI_Raw.dta", clear
+drop blk
+drop block
+replace b_8 = b__8 if b_8 == .
+drop b__8
+replace b_2 = b02 if b_2 == .
+drop b02
+replace f_10 = f__10 if f_10 == .
+replace f_11 = f__11 if f_11 == .
+drop f__10 f__11
 
-foreach v of varlist _all {
+foreach v of varlist a* b* f* g* {
      local V: subinstr local v "_" "", all
      rename `v' `V'
 }
+
+*---------------
+*Order variables
+*--------------
 
 order a10, after(a9)
 order a17-a22, after(a16)
@@ -20,16 +32,16 @@ order b9, after(b8)
 order b10, after(b9)
 order b13-b15, after(b9)
 order b2, before(b3)
-order c10-c11, after(c9)
-order e7, after(e6)
+*order c10-c11, after(c9)
+*order e7, after(e6)
 order f2c, after(f2b)
 order f10-f11, after(f9)
 order f12, after(f11)
 order g13, after(g11)
-order h7, after(h6)
-order i7, after(i6)
-order j11, after(j10)
-order j13, after(j11)
+*order h7, after(h6)
+*order i7, after(i6)
+*order j11, after(j10)
+*order j13, after(j11)
 
 order b11-b12, before(b13)
 order g12, before(g13)
@@ -74,33 +86,76 @@ lab var b13 "Company identification number (CIN)"
 lab var b14 "Whether a foreign entity has shares in the company"
 lab var b15 "Whether the plant did R&D"
 
-lab var c1 "Type of fixed capital"
-lab var c3 "Gross value - Opening"
-lab var c4 "Gross value - Adjustment due to reevaluation"
-lab var c5 "Gross value - Actual addition"
-lab var c6 "Gross value - deduction & adjustment"
-lab var c7 "Gross value - Closing (sum c3 to c6)"
-lab var c8 "Depreciation - up to begining of year"
-lab var c9 "Depreciation - during the current year"
-lab var c10 "Depreciation - due to sold/discarded"
-lab var c11 "Depreciation - up to year end (c8+c9-c10)"
-lab var c12 "Net value - Opening"
-lab var c13 "Net value - closing"
+*lab var c1 "Type of fixed capital"
+foreach v of varlist c3* {
+	lab var `v' "Gross value - Opening"
+}
+foreach v of varlist c4* {
+	lab var `v' "Gross value - Adjustment due to reevaluation"
+}
+foreach v of varlist c5* {
+	lab var `v' "Gross value - Actual addition"
+}
+foreach v of varlist c6* {
+	lab var `v' "Gross value - deduction & adjustment"
+}
+foreach v of varlist c7* {
+	lab var `v' "Gross value - Closing (sum c3 to c6)"
+}
+foreach v of varlist c8* {
+	lab var `v' "Depreciation - up to begining of year"
+}
+foreach v of varlist c9* {
+	lab var `v' "Depreciation - during the current year"
+}
+foreach v of varlist c10* {
+	lab var `v' "Depreciation - due to sold/discarded"
+}
+foreach v of varlist c11* {
+	lab var `v' "Depreciation - up to year end (c8+c9-c10)"
+}
+foreach v of varlist c12* {
+	lab var `v' "Net value - Opening"
+}
+foreach v of varlist c13* {
+	lab var `v' "Net value - Closing"
+}
+*lab var d1 "Type of working capital"
+foreach v of varlist d3* {
+	lab var `v' "Working capital - Opening"
+}
+foreach v of varlist d4* {
+	lab var `v' "Working capital - Closing"
+}
 
-lab var d1 "Type of working capital"
-lab var d3 "Working capital - Opening"
-lab var d4 "Working capital - Closing"
-
-lab var e1 "Type of worker"
-lab var e3 "Days worked - manufacturing"
-lab var e4 "Days worked - non manufacturing"
-lab var e5 "Days worked - Total"
-lab var e6 "Average number of people worked"
-lab var e7 "Number of days paid for"
-lab var e8 "Wages/salaries"
-lab var e9 "Bonus"
-lab var e10 "Contribution to provident fund and other funds"
-lab var e11 "Welfare expenses"
+*lab var e1 "Type of worker"
+foreach v of varlist e3* {
+	lab var `v' "Days worked - manufacturing"
+}
+foreach v of varlist e4* {
+	lab var `v' "Days worked - non manufacturing"
+}
+foreach v of varlist e5* {
+	lab var `v' "Days worked - Total"
+}
+foreach v of varlist e6* {
+	lab var `v' "Average number of people worked"
+}
+foreach v of varlist e7* {
+	lab var `v' "Number of days paid for"
+}
+foreach v of varlist e8* {
+	lab var `v' "Wages/salaries"
+}
+foreach v of varlist e9* {
+	lab var `v' "Bonus"
+}
+foreach v of varlist e10* {
+	lab var `v' "Contribution to provident fund and other funds"
+}
+foreach v of varlist e11* {
+	lab var `v' "Welfare expenses"
+}
 
 lab var f1 "Work done by others"
 lab var f2a "Repair & Maintenance - Building"
@@ -132,33 +187,77 @@ lab var g11 "Sale value of goods sold"
 lab var g12 "Subsidies"
 lab var g13 "Variation in stock of finished goods"
 
-lab var h1 "Product purchased (domestic)"
-lab var h3 "Item code"
-lab var h4 "Unit of quantity"
-lab var h5 "Quantity consumed"
-lab var h6 "Purchase value"
-lab var h7 "Rate per unit (price)"
+*lab var h1 "Product purchased (domestic)"
+foreach v of varlist h3* {
+	lab var `v' "Item code"
+}
+foreach v of varlist h4* {
+	lab var `v' "Unit of quantity"
+}
+foreach v of varlist h5* {
+	lab var `v' "Quantity consumed"
+}
+foreach v of varlist h6* {
+	lab var `v' "Purchase value"
+}
+foreach v of varlist h7* {
+	lab var `v' "Rate per unit (price)"
+}
 
-lab var i1 "Product purchased (imported)"
-lab var i3 "Item code"
-lab var i4 "Unit of quantity"
-lab var i5 "Quantity consumed"
-lab var i6 "Purchase value"
-lab var i7 "Rate per unit (price)"
+*lab var i1 "Product purchased (imported)"
+foreach v of varlist i3* {
+	lab var `v' "Item code"
+}
+foreach v of varlist i4* {
+	lab var `v' "Unit of quantity"
+}
+foreach v of varlist i5* {
+	lab var `v' "Quantity consumed"
+}
+foreach v of varlist i6* {
+	lab var `v' "Purchase value"
+}
+foreach v of varlist i7* {
+	lab var `v' "Rate per unit (price)"
+}
 
-lab var j1 "Product sold"
-lab var j3 "Item code"
-lab var j4 "Unit of quantity"
-lab var j5 "Quantity manufactured"
-lab var j6 "Quantity sold"
-lab var j7 "Gross sale value"
-lab var j8 "Goods and service tax"
-lab var j9 "excise duty"
-lab var j10 "Others"
-lab var j11 "Subsidy"
-lab var j12 "Per unit sale value (price)"
-lab var j13 "ex-factory value of quantity (unit cost?)"
-lab var j14 "Total"
+*lab var j1 "Product sold"
+foreach v of varlist j3* {
+	lab var `v' "Item code"
+}
+foreach v of varlist j4* {
+	lab var `v'  "Unit of quantity"
+}
+foreach v of varlist j5* {
+	lab var `v'  "Quantity manufactured"
+}
+foreach v of varlist j6* {
+	lab var `v'  "Quantity sold"
+}
+foreach v of varlist j7* {
+	lab var `v'  "Gross sale value"
+}
+foreach v of varlist j8* {
+	lab var `v'  "Goods and service tax"
+}
+foreach v of varlist j9* {
+	lab var `v'   "excise duty"
+}
+foreach v of varlist j10* {
+	lab var `v'   "Others"
+}
+foreach v of varlist j11* {
+	lab var `v'   "Subsidy"
+}
+foreach v of varlist j12* {
+	lab var `v'   "Per unit sale value (price)"
+}
+foreach v of varlist j13* {
+	lab var `v'   "ex-factory value of quantity (unit cost?)"
+}
+foreach v of varlist j14* {
+	lab var `v'   "Total"
+}
 
 lab var yr "Year"
 
@@ -181,8 +280,9 @@ lab def b2 1 "Individual owner" 2 "Family owned" 3 "Partneship" 4 "Public limite
 lab values b2 b2
 
 lab def b3 1 "Central gov" 2 "State/Local gov" 3 "Joint gov" 4 "Joint Public" 5 "Joint Private" 6 "Private" 9 "N\A"
-lab values b3 b3
+lab values b3
 
+/*
 lab def c1 1 "Land" 2 "Building" 3 "Plant & machinery" 4 "Transport equipment" 5 "Computer equipment" 6 "Pollution control equipment" /*
 */ 7 "Others" 8 "sub-total" 9 "Capital work in progress" 10 "Total"
 lab values c1 c1
@@ -206,6 +306,5 @@ lab values i1 i1
 
 lab def j1 11 "other products" 12 "Total" 99 "Misc"
 lab values j1 j1
-
-*save "C:\Users\Emmanuel\Dropbox\Prospectus_Emmanuel\ASI\Data_Raw\ASI_Raw.dta", replace
+*/
 

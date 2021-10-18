@@ -1,0 +1,19 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Relationship between productivity and switching at least once}
+\begin{tabular}{l*{2}{cc}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}         &            &\multicolumn{1}{c}{(2)}         &            \\
+\midrule
+Not a switcher      &           0         &         (.)&           0         &         (.)\\
+Switcher            &       0.116\sym{***}&     (0.000)&      0.0838\sym{***}&     (0.000)\\
+Constant            &       2.166\sym{***}&     (0.000)&       1.857\sym{***}&     (0.000)\\
+industry dummies    &          No         &            &         Yes         &            \\
+\midrule
+Observations        &        6810         &            &        6810         &            \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize \textit{p}-values in parentheses}\\
+\multicolumn{5}{l}{\footnotesize Productivity estimate comes from PFE using ACF method}\\
+\multicolumn{5}{l}{\footnotesize \sym{+} \(p<0.1\), \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+\end{table}

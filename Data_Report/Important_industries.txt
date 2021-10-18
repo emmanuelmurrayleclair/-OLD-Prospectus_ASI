@@ -1,0 +1,8 @@
+311225 --> 1040
+
+Interesting industries to compare India with Canada/US:
+Sawmills (321111 in NAICS, 16101 in NIC-08)
+Cement manufacturing (327310 in NAICS, 2394 in NIC-08)
+Steel manufacturing (331110 in NAICS, 2410 in NIC-08)
+
+Industries to exclude (because they buy fossil fuels to refine them: 1910-1920):

@@ -1,0 +1,44 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Marginal effects, probability of switching (any period)}
+\begin{tabular}{l*{3}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+                    &\multicolumn{1}{c}{any period}&\multicolumn{1}{c}{any period}&\multicolumn{1}{c}{any period}\\
+\hline
+Collateral requirement for a loan (percentage of loan amount)&   -0.000430\sym{***}&   -0.000385\sym{***}&   -0.000322\sym{***}\\
+                    &     (-5.65)         &     (-5.04)         &     (-4.27)         \\
+[1em]
+Cash                &     0.00488         &     0.00572\sym{+}  &    0.000189         \\
+                    &      (1.54)         &      (1.82)         &      (0.06)         \\
+[1em]
+Electricity         &      0.0559\sym{***}&      0.0549\sym{***}&      0.0381\sym{***}\\
+                    &     (14.79)         &     (14.57)         &      (9.36)         \\
+[1em]
+Fuels               &      0.0317\sym{***}&      0.0316\sym{***}&      0.0311\sym{***}\\
+                    &     (12.12)         &     (11.97)         &     (11.05)         \\
+[1em]
+Number of workers   &     -0.0670\sym{***}&     -0.0713\sym{***}&     -0.0397\sym{***}\\
+                    &     (-9.57)         &    (-10.13)         &     (-5.43)         \\
+[1em]
+Age                 &  -0.0000978         &     0.00173         &     0.00731         \\
+                    &     (-0.01)         &      (0.23)         &      (0.99)         \\
+[1em]
+Price of Oil        &                     &      0.0367\sym{+}  &      0.0350\sym{+}  \\
+                    &                     &      (1.87)         &      (1.83)         \\
+[1em]
+Price of Natural Gas&                     &      -0.113\sym{***}&     -0.0906\sym{***}\\
+                    &                     &     (-7.59)         &     (-6.20)         \\
+[1em]
+Price of Coal       &                     &     0.00550         &    -0.00775         \\
+                    &                     &      (0.28)         &     (-0.40)         \\
+[1em]
+industry dummies    &          No         &          No         &         Yes         \\
+\hline
+Observations        &        5252         &        5252         &        5252         \\
+\hline\hline
+\multicolumn{4}{l}{\footnotesize \textit{t} statistics in parentheses}\\
+\multicolumn{4}{l}{\footnotesize All independent variables are in logs}\\
+\multicolumn{4}{l}{\footnotesize \sym{+} \(p<0.1\), \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+\end{table}

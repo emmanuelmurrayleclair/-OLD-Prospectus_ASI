@@ -1,0 +1,28 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Effect of different fuel useage on energy efficiency}
+\begin{tabular}{l*{2}{cc}}
+\toprule
+                    &\multicolumn{2}{c}{(1)}           &\multicolumn{2}{c}{(2)}           \\
+                    &\multicolumn{2}{c}{Energy Efficiency (mmbtu)}&\multicolumn{2}{c}{Energy Efficiency (Spending)}\\
+\midrule
+Natural Gas - mmbtu=0&           0         &         (.)&           0         &         (.)\\
+Natural Gas - mmbtu=1&       0.172\sym{**} &     (0.004)&       0.128\sym{*}  &     (0.011)\\
+Oil - mmbtu=0       &           0         &         (.)&           0         &         (.)\\
+Oil - mmbtu=1       &       0.183         &     (0.191)&       0.112         &     (0.344)\\
+Coal - mmbtu=0      &           0         &         (.)&           0         &         (.)\\
+Coal - mmbtu=1      &       1.918\sym{***}&     (0.000)&       0.806\sym{***}&     (0.000)\\
+Electricity - mmbtu=1&           0         &         (.)&      -0.242\sym{+}  &     (0.082)\\
+Years Post switching to Gas=0&           0         &         (.)&           0         &         (.)\\
+Years Post switching to Gas=1&     -0.0921         &     (0.476)&     -0.0579         &     (0.597)\\
+Electricity=0       &                     &            &           0         &         (.)\\
+Other Fuel=0        &                     &            &           0         &         (.)\\
+Other Fuel=1        &                     &            &       0.165\sym{***}&     (0.000)\\
+industry dummies    &         Yes         &            &         Yes         &            \\
+\midrule
+Observations        &        3242         &            &        3242         &            \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize \textit{p}-values in parentheses}\\
+\multicolumn{5}{l}{\footnotesize \sym{+} \(p<0.1\), \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+\end{table}
