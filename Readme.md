@@ -1,6 +1,6 @@
 # Code - Job Market Paper
 
-## mmanuel Murray Leclair
+## Emmanuel Murray Leclair
 
 ## Institution: University of Western Ontario, Department of Economics
 
