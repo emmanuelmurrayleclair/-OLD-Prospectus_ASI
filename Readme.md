@@ -1,10 +1,9 @@
-# Prospectus Document - Empirical
+# Code - Job Market Paper
 
-## Student: Emmanuel Murray Leclair
+## mmanuel Murray Leclair
 
-## Institution: Western University, Department of Economics
+## Institution: University of Western Ontario, Department of Economics
 
 ## Contact: emurrayl@uwo.ca
 
-This repository contains the empirical section of this research project on technological change and misallocation in the context of India.
-
+This repository contains the code for my job market paper titled: "Balancing Economic Activity and Carbon Emissions: A Study of Fuel Substitution in India"
