@@ -8,4 +8,6 @@
 
 ## Contact: emurrayl@uwo.ca
 
-This repository contains the code for my job market paper titled: "Balancing Economic Activity and Carbon Emissions: A Study of Fuel Substitution in India"
+### Last updated: July 2023
+
+This repository contains the code for my job market paper.
